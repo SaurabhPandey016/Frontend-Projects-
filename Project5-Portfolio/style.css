@@ -1060,11 +1060,20 @@ li
     border-radius: 4rem;
 }
 
+.link1:hover{
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
 .link-logo
 {
     width: 1.3rem;
-    height: 1.3rem;
-    
+    height: 1.3rem;    
+}
+
+.link-logo:hover
+{
+    border-color: var(--white);
 }
 
 .social-links
@@ -1072,6 +1081,8 @@ li
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    
+    
 }
 
 .social-section
