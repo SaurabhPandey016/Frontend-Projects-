@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+
+    <style>
+
+        /* Ab Sirf kya Itna Likhne Se Transition Hone Lgega?/ Nahiiii */
+        /* ye Normal State Hogyi Ab Hover Pe Kya krna hai Ye Defie Krdo; */
+        .box{
+            background-color:beige ;
+            width: 125px;
+            height: 125px;
+            border: 1px solid black;
+            position: relative;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+
+        .box1{
+            background-color:rgb(209, 47, 47) ;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: relative;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+
+        .box2{
+            background-color:rgb(46, 249, 158) ;
+            width: 70px;
+            height: 70px;
+            border: 1px solid black;
+            position: relative;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+
+         /* You Can Do Transition Using Psuedo Class --> Hover Ye Sab pe */
+        .box:hover
+        {
+            
+            width: 500px;
+            height: 500px;
+            border-radius: 600px;
+            border:2px solid blue;
+            background-color: rgb(204, 68, 31);
+        }
+
+        .box1:hover
+        {
+            
+            width: 400px;
+            height: 400px;
+            border-radius: 600px;
+            border:2px solid rgb(21, 29, 26);
+            background-color: rgb(50, 243, 127);
+        }
+
+        .box2:hover
+        {
+            
+            width: 300px;
+            height: 300px;
+            border-radius: 600px;
+            border:2px solid rgb(40, 40, 42);
+            background-color: rgb(244, 84, 198);
+        }
+
+       
+
+       
+
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="box1">
+            <div class="box2">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

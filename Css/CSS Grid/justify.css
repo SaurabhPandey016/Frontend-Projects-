@@ -1,0 +1,49 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container
+{
+    background-color: beige;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    row-gap: 100px;
+
+    /* Justify Items and align Items Is USed By Parent to Manipulate Childs */
+    /* justify-self: center; /*Horixontal Direction */
+    /* align-items: center; Vertical Direction */ 
+
+    /* Justify Self Will Not Work on Those jiske parent display grid ni marked */
+    /* justify-self: center; */
+
+    /* Now Justify Items and Align Items Dono Property ko sath use krna hai to Place ITEMS  */
+    place-items: center;
+}
+.item
+{
+    border: 2px solid black;
+    background-color: aqua;
+    height: 180px;
+    width: 300px;
+
+    /* Now Here PArent are Marked as Display:grid; To We Can Use Self -> Self Means Children Assign It Individually */
+    /* Isse Poore item Container cener me  */
+    /* Ab mao Chahta ki srf item 1 hi center pe aaye to */
+    /* justify-self: start; */
+
+
+    /* If Want to use Justify Self you Should Mark Its Parent to grid */
+    /* justify-self: end; */
+    
+
+    
+
+}
+
+
+

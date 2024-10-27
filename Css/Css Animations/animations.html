@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color:beige;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .box{
+
+            /* Aur Isi Box Ki Position Relative MArk Krni Hogi; Kya ISke Bina Nhi Hoskta?? Lets see nahi Kyuki tm Position pe Kya Btaoge; */
+            /* Postion Relatiuve mark krne se hm top bottom left right property ka use kr akege */
+            position: relative;            
+            margin: 2px;
+            padding: 5px;
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 2px solid black;
+
+            /* Jis Box Me Ho usi Box Me Animation Run Krni Hogi */
+            animation: leftMovement;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            
+            
+        }
+
+        @keyframes leftMovement {
+
+            from {
+                top: 1px;
+                left: 1px;
+            }
+
+            to {
+                top: 1px;
+                left: 840px;
+            }
+        }
+    
+    
+    .box1{
+
+        /* Aur Isi Box Ki Position Relative MArk Krni Hogi; Kya ISke Bina Nhi Hoskta?? Lets see nahi Kyuki tm Position pe Kya Btaoge; */
+        /* Postion Relatiuve mark krne se hm top bottom left right property ka use kr akege */
+        position: relative;            
+        top: 350px;
+        height: 50px;
+        width: 200px;
+        background-color: rgb(208, 180, 69);
+        border-radius: 10px;
+        border: 2px solid black;
+
+        /* Jis Box Me Ho usi Box Me Animation Run Krni Hogi */
+        animation: leftMovement2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-direction:alternate-reverse;
+
+    }
+
+    @keyframes leftMovement2 {
+
+        from {
+            bottom: 1px;
+            left: 1px;
+        }
+
+        to {
+            bottom: 1px;
+            left: 840px;
+        }
+    }
+
+    .circle
+    {
+        
+        position: relative;
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        top: 160px;
+        left: 500px;
+        border: 1px solid black;
+        border-radius: 20px;
+        animation: circleMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-play-state: running;
+        
+    }
+
+    /* Didint Understand That part Easily We'll See in Future */
+@keyframes circleMovement {
+
+    0%{
+        top: 0%;
+        left: 5%;
+    }
+
+     30%{
+        top: 1%;
+        left: 90%;
+    }
+
+    60%{
+        top: 66%;
+        left: 5%;
+    }
+
+    100%{
+        top: 1%;
+        left: 70%;
+    } 
+  
+        
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+        <div class="circle">
+
+        </div>
+
+        <div class="box1">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

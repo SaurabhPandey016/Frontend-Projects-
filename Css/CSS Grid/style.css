@@ -1,0 +1,57 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: aqua;
+    
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    padding: 2rem;
+    
+}
+
+.item
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+
+/* Min Width Means iss Min Width Tk ye Mt krna */
+/* Max Width Mtlb is max width tk ye rhega */
+@media (min-width:730px)
+{
+    .container
+    {
+        /* grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(1, 1fr); */
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+        .item1
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item5
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}

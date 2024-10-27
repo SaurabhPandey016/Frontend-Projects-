@@ -1,0 +1,316 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+.header
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#headerParagraph
+{
+    width: 50%;
+    text-align: center;
+    /* font-weight: 300; */
+}
+
+.cards
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    /* grid-template-rows: repeat(2, 1fr); */
+    row-gap: 40px;
+    column-gap: 20px;
+
+    /* Uncomment to reuse */
+    /* Comment Grid Template Columns Then This below */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* uncomment to reuse */
+    /*  
+    /*                       decide columns      min-width  max-width*/
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 330px)); */
+    /*  
+                                         /* minmax Function */ 
+   
+    margin-bottom: 3rem;
+}
+/*  That's It You Can Use This Feature of Gridd Now; */
+
+/* Using Grid Autofit & Minmax Features */
+
+/* ==================================================================================================================================== */
+
+
+/* Uncomment to reuse */
+/* We Used Media Query To Make Our Design Responsive Now We Use Grid autofit/fill & min max Feature; */
+
+@media (max-width:1150px)
+{
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:862px)
+{
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:563px)
+{
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        width: 43%;
+    }
+}
+
+
+
+.cardImage
+{
+    height: 57%;
+    overflow: hidden;
+    transition: all;
+
+}
+
+.cardImage:hover
+{
+    transform: scale(1.1);
+    transition-duration: 0.7s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.cardMain{
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    /* padding-top: 0.6rem; */
+    /* gap: 1rem; */
+    height: 52%;
+    
+    justify-content: space-evenly;
+}
+
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 77%;
+}
+
+/* .cardInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+
+
+.card1
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+    
+}
+
+p
+{
+    font-size: small;
+}
+.card2
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card3
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card4
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card5
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card6
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card7
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    height: 26rem;
+}
+
+.card8
+{
+    display: flex;
+    flex-direction: column;
+    border: 0.001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+   
+    
+}
+
+/* img:hover
+{
+    transform: scale(1.02);
+} */
+
+.cardFooter{
+   
+    display: flex;
+    flex-direction: row;
+    padding-block-end: 3px;
+}
+
+#heading
+{
+    margin-block-end: 7px;
+}
+
+.cardlogodesc
+{
+    display: flex;
+    width: 61%;
+    gap: 3px;
+}
+
+.cardOwnerDesc
+{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+
+}
+
+#imglogo
+{
+    
+    width: 34px;
+    border-radius: 300px;
+    align-self: end;
+    
+}
+
+#logoAnchor
+{
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#logoDate
+{
+    font-size: 10.3px;
+
+}
+.cardlogo{
+    display: flex;
+    row-gap: 10px;
+}
+
+/* .cardButton
+{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    background-color: white;
+    
+    border: 0.00001px solid black;
+    /* padding: 0.27rem; */
+    /* padding-top: 0.5rem; */
+    /* border-radius: 3px;
+     
+}
+*/
+
+#cardbutton:hover
+{
+    background-color: black;
+    color: rgb(5, 4, 4);
+}
+
+#cardbutton
+{
+    padding: 0.27rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7rem;
+    border: 0.000000001px solid rgb(198, 194, 194);
+    border-radius: 3px;
+    text-shadow: 1px 3px 3px solid black;
+    text-decoration: none;
+    color: black; 
+   
+}
+
+#cardbutton:hover{
+    color: white;
+}

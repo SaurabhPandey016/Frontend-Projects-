@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas Property</title>
+
+    <style>
+
+        /* Ab Isi Grid Ko responsive Bna Do Using auto fit / auto-fill Property; */
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+            display: grid;
+            
+            row-gap: 1rem;
+            column-gap: 1rem;
+            grid-template-areas: 
+
+            /*  Bxx Done  */
+            /* Step 3 Then Write The Template in Form of a 2D Grid Khtam */
+            "Header Header Header"
+            "Sidebar Content1 Content1"
+            "Sidebar Content2 Content3"
+            "Footer Footer Footer"
+            ;
+
+            /* To Ye Properrty Se Utna Responsive Ni Bnanya ja skta Layouts ko Thats Why We Use Media Queries */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+        }
+
+        .items
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            background-color: aqua;
+            color: black;
+            border: 1px solid black;
+        }
+
+        /* Step 2 Mark Grid Areas As Id */
+        #Header{
+            grid-area: Header;
+        }
+        #Sidebar{
+            grid-area: Sidebar;
+        }
+        #Content1{
+            grid-area: Content1;
+        }
+        #Content2{
+            grid-area: Content2;
+        }
+        #Content3{
+            grid-area: Content3;
+        }
+        #Footer{
+            grid-area: Footer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Now Mske Layout Using Grid Template areas -->
+    <div class="container">
+
+        <!-- Step 1 Give Everyone Id;s -->
+        <div class="items" id="Header">Header</div>
+        <div class="items" id="Sidebar">Sidebar</div>
+        <div class="items" id="Content1">Content1</div>
+        <div class="items" id="Content2">Content2</div>
+        <div class="items" id="Content3">Content3</div>
+        <div class="items" id="Footer">Footer</div>
+    </div>
+
+
+</body>
+</html>

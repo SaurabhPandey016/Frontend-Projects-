@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center style="font-size: x-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Introduction Page</center>
+    <form>
+
+        <!-- Combining This into filedset -->
+
+        <fieldset >
+
+        <!-- Now Adding Caption To Fieldset -->
+        <!-- Using Legend Attribute -->
+
+        <legend style="font-size: x-large; margin-bottom: 4px; border-radius: 0cap;">Your Information</legend>
+
+            <!-- this is Input Text Field -->
+        <label for="textField">Enter Email</label>
+        <input type="text" name="textField" id = "textField" placeholder="Enter Email Address">
+        <br/> <br/>
+
+        <!-- this is Password Text Field -->
+        <label for="passwordField">Enter Password</label>
+        <input type="password" name="passwordField" id="passwordField" placeholder="Enter Password">
+
+        <h3>Enter The address</h3>
+        <textarea name="Enter The address" id="address1" cols="20" rows="3" placeholder="Enter Your Address"></textarea>
+        </br>
+
+        <!-- this is radio Buttons 
+        IF You Want to select anyone of them then name should be similar ex name = gender in all-->
+        <h3>Select gender</h3>
+        <label for="radioButtonM">Male</label>
+        <input type="radio" name="gender" id="radioButtonM">
+
+        <label for="radioButtonF">Female</label>
+        <input type="radio" name="gender" id="radioButtonF">
+
+        <label for="radioButtonO">Prefer not to say</label>
+        <input type="radio" name="gender" id="radioButtonO" >
+        </br>
+
+        <h3>Select Language Known</h3>
+        <!-- this is checkbox -->
+        <label for="lang1">English</label>
+        <input type="checkbox" name="Language" id="lang1">
+
+        <label for="lang2">Hindi</label>
+        <input type="checkbox" name="Language" id="lang2">
+
+        <!-- selecting More Languages -->
+        <select name="languages" id="" >
+            <option value="Hungarian" id="languages">Hungarian</option>
+            <option value="chinese" >chinese</option>
+            <option value="italian" >italian</option>
+            <option value="chinese" >kochi</option>
+            <option value="Hungarian" id="languages">russian</option>
+            <option value="chinese" id="languages">dan</option>
+            <option value="Hungarian" id="languages">dajb</option>
+            <option value="chinese" id="languages">adib</option>
+            <option value="Hungarian" id="languages">adib</option>
+            <option value="chinese" id="languages">daib</option>
+            <option value="Hungarian" id="languages">diq</option>
+            <option value="chinese" id="languages">qdpi</option>
+        </select>
+       
+
+        <br></br>
+
+        </fieldset>
+        
+
+        <!-- this is Date tag -->
+        <h3>Select Date of Birth</h3>
+        <label for="dob1">Choose From Calender</label>
+        <input type="date" name="dob" id="dob1">
+        </br>
+
+        <h3>Additional Information Upload</h3>
+        <label for="">Upload Here</label>
+        <input type="file" name="Upload" id="file1" >
+        <br> <br>
+
+        <!-- footer -->
+        <!-- now This is  submit Button-->
+        <label for="submitButton"></label>
+        <input type="submit" name="submitButton" id="submitButton" value="Submit">
+
+        <!-- Reset Button -->
+        <input type="reset" name="clear" id="reset1" value="Reset">
+        
+    </form>
+</body>
+</html>

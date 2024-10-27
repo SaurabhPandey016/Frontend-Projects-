@@ -1,0 +1,83 @@
+.container
+{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    display:flex ;
+    background-color: bisque;
+    align-items: center;
+    
+}
+
+.box
+{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box1
+{
+    position: relative;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    left :250px;
+    display:flex ;
+    justify-content: center;
+    align-items: center ;
+
+    /*  Transition Ki Shorthand Property Hai Ye */
+        /*         1                  2           3              4 */
+    /* all mtlb width height sbpe, duration , timing function, delay */
+
+    /* Iss Trasition Ko Lgane Se TransForm Smoothly Hota hai Ni To Turant fast Hota Hai */
+    transition: all 1s linear;
+}
+
+p{
+    font-size: large;
+}
+
+.box:hover
+{
+    /* First Propoerty Use To Increase The Scale 1 se 1 times 2 se 2 times */
+    transform: scale(2);
+
+    /* Second Property*/
+    /* transform: rotate(45deg); Scale or ROtate Bhi Ek Sath kaam ni krte Syd */
+
+    
+    /* Third */ /* Used To Tilt The Element */
+    /* transform: skew(45deg); */
+
+     /* Fourth  Used To Have Object 500 X Axis Pe , 120px y Axis pe*/
+   /* transform: translate(500px, 120px );
+     */
+}
+
+.box1:hover
+{
+    /* First Propoerty Use To Increase The Scale 1 se 1 times 2 se 2 times */
+    transform: scale(2);
+
+    /* zSecond */
+    transform:rotate(-45deg) ;
+
+    /* Third */ /* Used To Tilt The Element */
+    /* transform: skew(-45deg); */
+
+    /* Fourth  Used To Have Object -500 X Axis Pe , 100px y Axis pe*/
+   /* transform: translate(-500px , 100px ); */
+
+   /* Fifth Ye y Axis me 5 Guna Krdega  */
+   /* transform:scaleY(5); */
+
+   /* Sixth ye X Axis Pe 5 Guna ke=rdega */
+   /* transform: scaleX(5); */
+    /* Dono Ek Sath Kaam ni Krte hai agr Dono Ko Lga do to */
+}

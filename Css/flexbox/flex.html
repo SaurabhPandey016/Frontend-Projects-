@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            
+            display: flex;
+            
+           flex-direction: row;
+           position: absolute;
+           
+            
+            /* align-items:center ; */  
+            
+        }
+
+        .box{
+            
+            height: 100px;
+            width:100px;
+            border: 1px solid black;
+            margin: 2px;
+            margin-bottom: 1rem;
+            
+            
+        }
+        #box1{
+            background-color: aquamarine;
+            /* order: 500; */
+            /* align-self: baseline; */
+            position: absolute;
+            left: 20rem;
+            margin: 2rem;
+            
+
+        }
+        #box2{
+            background-color: rgb(240, 238, 246);
+            /* align-self: flex-start; */
+            position: absolute;
+            left: 10rem;
+            margin: 2rem;
+            
+        }
+        #box3{
+            background-color: yellow;
+            position: absolute;
+            top: 10rem;
+            
+        }
+        #box4{
+            background-color: rgb(130, 95, 59);
+            /* order: -1; */
+            /* flex-basis: 400px; */
+            /* position: absolute; */
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="div1">
+            <div class="div2">
+                <div class="div3">
+                    <div class="box" id="box1">Box1</div>
+                    <div class="box" id="box2">Box2</div>
+                    <div class="box" id="box3">Box3</div>
+                    <div class="box" id="box4">Box4</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

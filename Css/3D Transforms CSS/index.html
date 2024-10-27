@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container
+        {
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            justify-content: center;
+            row-gap: 5rem;
+            column-gap: 5rem;
+            padding: 8rem;
+        }
+
+        .items
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            color: rgb(95, 89, 89);
+            text-shadow: 1px 1px 1px black;
+            background-color: aquamarine;
+            border: 1px solid rgb(155, 149, 149);
+        }
+
+        /* Start Doing 3d Transforms */
+        #item1:hover
+        {
+            transform: scaleX(1.2)
+        }
+        #item2:hover
+        {
+            transform: scaleY(1.2);
+        }
+        #item3:hover
+        {
+            transform: perspective(500px) rotateZ(45deg) scaleZ(1.2);
+        }
+        #item4:hover
+        {
+            transform: translateX(4rem);
+        }
+        #item5:hover
+        {
+            transform: translateY(4rem);
+        }
+        #item6:hover
+        {
+            transform: perspective(500px) translateZ(4rem);
+        }
+        #item7:hover
+        {
+            transform: rotateX(45deg);
+        }
+        #item8:hover
+        {
+            transform: rotateY(45deg);
+        }
+        #item9:hover
+        {
+            transform:  rotateZ(45deg);
+        }
+                
+    </style>
+</head>
+<body>
+
+    <!--  Main Difference In 3D Tranforms is Your Have A Z Angle Also To Move; -->
+    <div class="container">
+        <div class="items" id="item1">scaleX</div>
+        <div class="items" id="item2">scaleY</div>
+        <div class="items" id="item3">scaleZ</div>
+        <div class="items" id="item4">translateX</div>
+        <div class="items" id="item5">translateY</div>
+        <div class="items" id="item6">translateZ</div>
+        <div class="items" id="item7">rotateX</div>
+        <div class="items" id="item8">rotateY</div>
+        <div class="items" id="item9">rotateZ</div>
+    </div>
+    
+</body>
+</html>

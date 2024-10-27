@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Now Creating Global Spoce Variables to use */
+        :root{
+            --primary-color:brown;
+            --primary-width: 400px;
+        }
+
+        .container{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+            
+        }
+
+        /* Creating INbox Variables that Works In The Box No Scope out of the Box */
+        .box{
+
+            
+            background-color: var(--primary-color);
+            width: var(--primary-width);
+            height: 300px;
+            margin: 20px;
+            padding: 20px;
+                      /* X    Y     Color  */
+            /*Case 1--> box-shadow: 10px 12px yellow; */
+
+            /* Case 2    X    Y   BLUR    COLOR*/ 
+            /* box-shadow: 12px 13px 5px yellow; */
+
+            /* Case 3     X   Y   BLUR  SPREAD     COLOR */
+            /* box-shadow: 10px 12px 10px   50px     yellow; */
+
+            /* cASE 4 IF WANT TO INSERT SHADOW INSIDE BOX */
+            /*          inner shadow    X     y   blur spread  color*/
+            /* box-shadow: inset           10px 12px 20px  20px   yellow; */
+
+
+            /*                          By Seperating Values With a Comma-> , */
+            /* case 5 Multiple Shadows               X     Y    blur  sprd  clor    X    Y    blr  sprd  color*/
+            box-shadow: 10px 12px 20px 20px white, 20px -30px 15px 15px green, 20px 30px 15px 15px rgb(220, 133, 66);
+        }
+
+        
+
+        /*  Now Text Shadow Adding Then Understand Ceation Of Custom Variables */
+        #head1{
+        /* {                 X    Y    Color */
+            /* text-shadow: 10px -2px white;  Case `1*/
+
+            /* case 2 */
+            /*             Color              X    Y   blur */
+            /* text-shadow: rgb(123, 54, 234) 10px 12px 10px; */
+
+            /* Case 3 */
+            /* text-shadow: green 10px -12px; */
+
+            /* case 4 --> Adding No Color Default value of shadow is Black */
+            /* text-shadow: 4px 10px; */
+
+            /* Now MUltiple Shadows on Text Homework Using Comma*/
+            text-shadow: 
+            5px 5px 5px blue, 
+            61px 61px 16px green, 
+            72px 100px 7px yellow
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <h1 id="head1">Welcome to Dhanlaxmi Enterprise Solutions</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure molestiae non at dolore fuga ea 
+                aspernatur incidunt placeat consectetur ipsam perferendis quidem neque dicta, id modi 
+                et natus sunt!</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

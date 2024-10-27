@@ -1,0 +1,186 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container
+{
+    background-color: rgb(176, 210, 240);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.textbox
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    width: 85%;
+    position: relative;
+    left: 17px;
+    
+    
+}
+
+.box
+{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: space-evenly;
+    flex-direction: column;
+    gap:19px;
+    height: 400px;
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 20px;
+   
+}
+
+.image
+{
+    height: 120px;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+img{
+    height: 125px;
+    width: 300px;
+}
+
+#image1
+{
+    width: 300px;
+    height: 400px;
+}
+
+#frontimg
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+p{
+
+    
+    font-size: x-small;
+    
+}
+
+.button1
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 23px;
+    background-color:rgb(168, 222, 222);
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo
+{
+    height: 30px;
+    width :39px;
+    overflow-y: hidden;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#musiclogo
+{
+    height: 100%;
+    width :100%;
+    border-radius: 20px;
+
+}
+
+#button2
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 23px;
+    background-color: rgb(23, 23, 89);
+    height: 50px;
+    width: 250px ;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0px 1px 1px 2px black; */
+    
+    color: white;
+}
+
+h6
+{
+    color: white;
+}
+
+.cancel
+{
+    position: relative;
+    left: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    
+    height: 14px;
+    overflow-y: hidden;
+}
+
+#last
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+}
+
+a
+{
+
+    text-decoration: none;
+    color: white;
+}
+
+#change
+{
+    text-shadow: 1px 1px 1px black;
+}
+
+.leftbox
+{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.rightbox
+{
+    width: 40%;
+}
