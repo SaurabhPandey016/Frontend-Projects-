@@ -1061,8 +1061,16 @@ li
 }
 
 .link1:hover{
-    background-color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.368);
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.link1-a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-logo
@@ -1080,8 +1088,7 @@ li
 {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    
+    gap: 1rem; 
     
 }
 
@@ -1094,10 +1101,19 @@ li
     gap: 1rem;
 }
 
-.links
+.footer-section
 {
-    /* background-color: rgba(255, 255, 255, 0.1);; */
+    padding-bottom: 3rem;
 }
+
+.copyright-section
+{
+    padding-top: 7rem;
+    color:  rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
