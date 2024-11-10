@@ -142,7 +142,7 @@
    let ele = `${100/inputCheck.length * checkCnt}%`;
    progressIn.style.width = ele;
    paraProgress.innerText = `${checkCnt}/${inputCheck.length} Task Completed `;
-   textProgress.innerText = allQuotes[inputCheck.length%checkCnt + 1];
+   textProgress.innerText = allQuotes[checkCnt];
 
 
    // ye click kro to class add hojye wo functionaity
@@ -172,12 +172,13 @@
             checkCnt = 0;
             inputCheck.forEach((e) => {
                if(myData[e.id].completed) checkCnt++;
+               
             });
          
             let ele = `${100/inputCheck.length * checkCnt}%`;
             progressIn.style.width = ele;
             paraProgress.innerText = `${checkCnt}/${inputCheck.length} Task Completed `;
-            textProgress.innerText = allQuotes[inputCheck.length%checkCnt + 1];
+            textProgress.innerText = allQuotes[checkCnt];
 
 
             // Ye Code likha tha ki usi object pe create krdu pr bna nhi
@@ -224,7 +225,7 @@
       // ----------------------
       
 
-      // thi sis where we are storing our input data;
+      // thi is where we are storing our input data;
       input.addEventListener('input', function(e) {
 
 
@@ -241,13 +242,7 @@
          // ab isi input ko local storage se yha pe laane k liye;
          // ye updation to storage;
          // agr storage me h to fetch krke dikha do
-         if(myData[e.target.id])
-         {
-            e.value = myData[e.target.id].name;
-            myData[e.target.id].completed = myData[e.target.id].completed  
-         } 
-         else
-         {
+        
             myData[e.target.id] = {
 
                name: e.target.value, 
@@ -255,7 +250,6 @@
                completed : false
                
             }
-         }
           
          localStorage.setItem('myData', JSON.stringify(myData));
          
