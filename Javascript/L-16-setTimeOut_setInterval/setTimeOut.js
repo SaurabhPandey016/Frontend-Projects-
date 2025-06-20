@@ -154,9 +154,9 @@
     //4. Jab setTimeOut ka Time 0second set ho to konsa print hoga console wla ya timout even agr wo upr likha h;
     {
 
-        function a() {
-            console.log("hello world");
-        }
+        // function a() {
+        //     console.log("hello world");
+        // }
 
         // Example -> 
         // const t1 = setTimeout('console.log("ji gutu ji 1");', 1000);
@@ -183,13 +183,53 @@
         // pr setTiomeout 1 bar hi hota;
 
 
-        const t1 = setInterval(a, 1000);
-        clearInterval(t1);
+        // const t1 = setInterval(a, 1000);
+        // clearInterval(t1);
 
         // baaki aage pdhege project me;
     } 
 
+    const spanText = document.querySelector('.text');
+    const arr = ["Software-Engineer", "Frontend-Developer", "Katala", "Bhatala"];
 
+    function autotype(arr, element) {
+        
+        let i = 0;
+        let j = 0;
+        let forward = false;
+        let skipspeed = 0;
+        const t1 = setInterval(function() {
+            
+            let word = arr[i];
+
+            // for slowing and Fasting Your Speed;
+            if(skipspeed) {
+                skipspeed--;
+                return;
+            }
+            // element.innerText = element.innerText + word[j++];
+            if(forward == false) {
+                skipspeed = 1;
+                element.innerText = element.innerText + word[j++];
+                if(j == word.length) {
+                    forward = true;
+                    j = 0;
+                    i++;
+                    skipspeed = 5;
+                }
+            }
+            else {
+                element.innerText = element.innerText.slice(0, element.innerText.length-1);
+                if(element.innerText.length === 0) {
+                    forward = false;
+                }
+            }
+            if(i == arr.length) i = 0;
+        
+        }, 70);
+    }
+    autotype(arr, spanText);  
+    // clearInterval(t1);  
 
 
 

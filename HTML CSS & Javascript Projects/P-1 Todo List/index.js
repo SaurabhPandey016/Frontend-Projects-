@@ -126,7 +126,6 @@
       "Just a step away, Keep going!",
       "Whoa! You just completed all the goals, time for chill ✨"
    ]
-   
 
    const myData = JSON.parse(localStorage.getItem('myData')) || {};
 
@@ -256,16 +255,12 @@
       });
 
       input.addEventListener('focus', function(e) {
-
-         showError.classList.remove('show-error');
-         
-         
+         showError.classList.remove('show-error'); 
       });
    });
 
 
 // Now Add a Functionality that when you check on boxes you cannot further edit it unless you uncheck
-
 }
    
     
